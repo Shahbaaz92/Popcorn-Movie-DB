@@ -1,4 +1,8 @@
-function Navbar({ query, setQuery, movies }) {
+import { useState } from "react";
+
+function Navbar({ movies }) {
+  const [query, setQuery] = useState("");
+
   return (
     <nav className="nav-bar">
       <div className="logo">

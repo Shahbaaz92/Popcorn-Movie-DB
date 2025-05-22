@@ -50,13 +50,12 @@ const tempWatchedData = [
 ];
 
 export default function App() {
-  const [query, setQuery] = useState("");
   const [movies, setMovies] = useState(tempMovieData);
   const [watched, setWatched] = useState(tempWatchedData);
 
   return (
     <>
-      <Navbar query={query} setQuery={setQuery} movies={movies} />
+      <Navbar movies={movies} />
       <Main
         movies={movies}
         setMovies={setMovies}

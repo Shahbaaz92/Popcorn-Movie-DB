@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function MovieList({ movies }) {
   const [isOpen1, setIsOpen1] = useState(true);
+
   return (
     <div className="box">
       <button
