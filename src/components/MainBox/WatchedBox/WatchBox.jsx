@@ -1,6 +1,6 @@
 import { useState } from "react";
-import WatchList from "./WatchList";
 import WatchedSumary from "./WatchedSummary";
+import WatchList from "./WatchList";
 
 function WatchBox({ watched }) {
   const [isOpen2, setIsOpen2] = useState(true);
@@ -16,6 +16,7 @@ function WatchBox({ watched }) {
       {isOpen2 && (
         <>
           <WatchedSumary watched={watched} />
+
           <WatchList watched={watched} />
         </>
       )}

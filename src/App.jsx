@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import MainBox from "./components/MainBox";
+import Navbar from "./components/NavBar/Navbar";
+import MainBox from "./components/MainBox/MainBox";
 
 const tempMovieData = [
   {

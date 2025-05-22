@@ -1,12 +1,12 @@
 // import { useState } from "react";
-import MovieBox from "./MovieBox";
-import WatchList from "./WatchBox";
+import MovieBox from "./MovieBox/MovieBox";
+import WatchBox from "./WatchedBox/WatchBox";
 
 function MainBox({ movies, setMovies, watched, setWatched }) {
   return (
     <main className="main">
       <MovieBox movies={movies} setMovies={setMovies} />
-      <WatchList watched={watched} setWatched={setWatched} />
+      <WatchBox watched={watched} setWatched={setWatched} />
     </main>
   );
 }
